@@ -3,6 +3,12 @@
 # включительно в порядке возрастания, если m<n,
 # или в порядке убывания в противном случае.
 m, n = int(input()), int(input())
-if m > n:
-    for i in range(m, n + 1):
+if m < n:
+    for i in range(m, (n + 1)):
         print(i)
+elif m > n:
+    for j in range(m, (n - 1), -1):
+        print(j)
+else:
+    print(m)
+     
