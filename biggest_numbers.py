@@ -9,8 +9,8 @@ for i in range (n):
     if num > biggest:
         second = biggest
         biggest = num
-        if num > second
-
+    elif second < num < biggest:
+        second = num
 print(biggest)
 print(second)
 
