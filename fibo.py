@@ -1,9 +1,15 @@
 # Напишите программу, которая считывает натуральное число n
-# и выводит первые nn чисел последовательности Фибоначчи.
+# и выводит первые n чисел последовательности Фибоначчи.
 n = int(input())
 fibo = 1
-pre_fibo = 1
-for i in range(n):
-    print(fibo)
-    fibo = fibo + pre_fibo
-    pre_fibo = fibo
+first = second = 0
+if n < 2:
+    print('1')
+else:
+    for i in range(n):
+        print(fibo, end = ' ')
+        second, first = first, fibo
+        fibo = first + second
+        
+    
+    
