@@ -2,9 +2,9 @@
 # Концом последовательности является одно из трех слов: «стоп», «хватит», «достаточно» 
 # (маленькими буквами, без кавычек). Напишите программу, которая выводит общее количество 
 # членов данной последовательности.
-word = input()
-counter = 0
-while word != "стоп" and word != "хватит" and word != "достаточно":
-    counter += 1
-    word = input()
-print(counter)
+n = int(input())
+count_sum = 0
+while n >= 0:
+    count_sum += n
+    n = int(input())
+print(count_sum)
