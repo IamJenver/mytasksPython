@@ -2,7 +2,7 @@
 # Используйте оператор break при обнаружении делителя
 n = int(input())
 i = 2
-while i < 10:
+while i < n:
     if n % i == 0:
         break
     i += 1
