@@ -12,3 +12,4 @@ for j in range(len(l2)):
     l2[j] **= p
     counter += l2[j]
 print(counter)
+print(sum(l2))
